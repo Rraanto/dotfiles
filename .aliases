@@ -1,3 +1,2 @@
-alias jupyter="python3 -m jupyter notebook"
 alias wm="~/wm.sh"
 alias desk="~/init_desktop.sh"

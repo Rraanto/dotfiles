@@ -19,7 +19,9 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # opam configuration
 test -r /Users/rantonyainarakotondrajoa/.opam/opam-init/init.sh && . /Users/rantonyainarakotondrajoa/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
-alias jupyter="python3 -m jupyter notebook"
-export SCILAB_EXECUTABLE="/Applications/scilab-6.1.1.app"
+# scilab exec path
+SCILAB_EXECUTABLE="/Applications/scilab-6.1.1.app/Contents/bin/scilab-adv-cli"
+export SCILAB_EXECUTABLE
+
 source ~/.bash_prompt
 source ~/.aliases
