@@ -11,7 +11,7 @@ PS1+=" "    # space
 PS1+="\[\e[0;91m\]\W\[\e[m\]"    # current directory
 PS1+="\[\e[0;90m\]\$(git_branch)\[\e[m\]"    # current branch
 PS1+=" "    # space
-PS1+="> "    # end prompt
+PS1+="❯ "    # end prompt
 export PS1;
 
 export CLICOLOR=1;

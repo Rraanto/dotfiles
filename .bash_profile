@@ -25,3 +25,4 @@ export SCILAB_EXECUTABLE
 
 source ~/.bash_prompt
 source ~/.aliases
+source ~/.bashrc
