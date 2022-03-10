@@ -3,6 +3,8 @@ set mouse=a
 syntax on
 
 colorscheme slate
+autocmd VimEnter * NERDTree | wincmd p
+map <C-o> :NERDTreeToogle<CR>
 
 call plug#begin()
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
