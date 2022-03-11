@@ -6,7 +6,8 @@ map <C-o> :NERDTreeToggle<CR>
 
 " plugins 
 call plug#begin()
-" colorscheme
+" colorschemes
+Plug 'ayu-theme/ayu-vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
@@ -47,11 +48,15 @@ filetype plugin indent on
 syntax on
 syntax enable
 
-let base16colorspace=256
-colorscheme base16-gruvbox-dark-hard
-set background=dark
+" Colorscheme options
+"
+" let base16colorspace=256
+" colorscheme base16-gruvbox-dark-hard
+" set background=dark
 
 set termguicolors
+let ayucolor="dark"
+colorscheme ayu 
 
 if has('gui_running')
     set guicursor=n-v-c-sm:block,i-ci-ve:block, r-cr-o:blocks
