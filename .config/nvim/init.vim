@@ -3,6 +3,10 @@ set mouse=a
 
 " p key bindings 
 map <C-o> :NERDTreeToggle<CR>
+map <C-F> :Telescope find_files<CR>
+map <C-s> :write<CR>
+
+" write a dummy comment with some symbols ( ' + _ -' )
 
 " plugins 
 call plug#begin()
@@ -24,7 +28,10 @@ Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
-Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs' 
+
+" linter
+Plug 'dense-analysis/ale'
 
 " Syntax highlighting plugin
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
