@@ -6,8 +6,6 @@ map <C-o> :NERDTreeToggle<CR>
 map <C-F> :Telescope find_files<CR>
 map <C-s> :write<CR>
 
-" write a dummy comment with some symbols ( ' + _ -' )
-
 " plugins 
 call plug#begin()
 " colorschemes
@@ -16,6 +14,7 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'shaunsingh/solarized.nvim'
 
 " UI
 Plug 'preservim/nerdtree'
@@ -62,8 +61,7 @@ syntax enable
 " set background=dark
 
 set termguicolors
-let ayucolor="dark"
-colorscheme ayu 
+colorscheme base16-solarized-dark
 
 if has('gui_running')
     set guicursor=n-v-c-sm:block,i-ci-ve:block, r-cr-o:blocks
@@ -106,7 +104,7 @@ let bufferline.exclude_name = ['package.json']
 " if set to 'buffer_number', will show buffer number in the tabline
 " if set to 'numbers', will show buffer index in the tabline
 " if set to 'both', will show buffer index and icons in the tabline
-let bufferline.icons = v:false
+let bufferline.icons = v:true
 
 " Sets the icon's highlight group.
 " If false, will use nvim-web-devicons colors
