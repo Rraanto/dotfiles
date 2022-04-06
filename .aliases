@@ -1,5 +1,5 @@
-alias wm="~/wm.sh"
 alias desk="~/init_desktop.sh"
 alias vpn="open /Applications/Star\ VPN.app/"
 alias python=$(which python3)
 alias tks="tmux kill-server"
+alias xx="exit"

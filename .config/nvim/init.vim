@@ -3,8 +3,13 @@ set mouse=a
 
 " p key bindings 
 map <C-o> :NERDTreeToggle<CR>
-map <C-F> :Telescope find_files<CR>
+map <C-F> :Telescope grep_string<CR>
 map <C-s> :write<CR>
+
+" markdown 
+nnoremap <C-m> :MarkdownPreview<CR>
+
+set clipboard=unnamedplus
 
 " plugins 
 call plug#begin()
@@ -28,6 +33,13 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
 Plug 'jiangmiao/auto-pairs' 
+
+" Markdown config
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" preview
+Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app && yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 
 " linter
 Plug 'dense-analysis/ale'
@@ -61,7 +73,7 @@ syntax enable
 " set background=dark
 
 set termguicolors
-colorscheme base16-solarized-dark
+colorscheme base16-gruvbox-dark-hard
 
 if has('gui_running')
     set guicursor=n-v-c-sm:block,i-ci-ve:block, r-cr-o:blocks
@@ -143,4 +155,6 @@ let bufferline.letters =
 " Sets the name of unnamed buffers. By default format is "[Buffer X]"
 " where X is the buffer number. But only a static string is accepted here.
 let bufferline.no_name_title = v:null
+
+" Markdown config 
 

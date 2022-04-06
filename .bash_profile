@@ -21,6 +21,9 @@ test -r $HOME/.opam/opam-init/init.sh && . $HOME/.opam/opam-init/init.sh > /dev/
 SCILAB_EXECUTABLE="/Applications/scilab-6.1.1.app/Contents/bin/scilab-adv-cli"
 export SCILAB_EXECUTABLE
 
+# OWM api key for wfetch
+export WEATHER_CLI_API="51830d9db8166c65f5b0f3571498aed5"
+
 source ~/.bash_prompt
 source ~/.aliases
 source ~/.bashrc
