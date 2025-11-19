@@ -1,0 +1,14 @@
+
+/**
+ * Custom colorscheme generated using pywal
+ *
+ * Colors
+ **/ 
+ * { 
+    background: #0d0f17;
+    background-alt: #a1a1a1;
+    foreground: #e6e7e6;
+    selected: #D1D2D1;
+    active: #e6e7e6;
+    urgent: #9D9FA1;
+   }
