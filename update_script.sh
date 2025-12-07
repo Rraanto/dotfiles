@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CONFIG_DIR=/home/rraanto/.config
+SCRIPTS_DIR=/home/rraanto/.scripts/
 
 cp -r $CONFIG_DIR/i3 i3
 cp -r $CONFIG_DIR/polybar polybar
@@ -9,3 +10,5 @@ cp -r $CONFIG_DIR/nvim nvim
 cp -r $CONFIG_DIR/kitty kitty
 cp -r $CONFIG_DIR/zathura zathura
 cp -r $CONFIG_DIR/gtk-3.0 gtk-3.0
+
+cp -r $SCRIPTS_DIR/ scripts
